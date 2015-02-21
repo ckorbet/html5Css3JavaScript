@@ -1,0 +1,90 @@
+h2 {
+	margin-top: 100px;
+}
+p {
+	margin-bottom: 0;
+	font-size: 14px;
+}
+img {
+	width: 200px;
+	height: 350px;
+	float: right;
+}
+.card {
+	position: absolute;
+	left: 100px;
+	overflow: hidden;
+	background: #fff;
+
+	padding: 20px;
+	width: 350px;
+	height: 350px;
+	border: 2px solid #666;
+	border-radius: 8px;
+
+	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+	/*
+	-moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    */
+    transition: all 0.5s ease-in-out;
+}
+.card1 {
+	top: 150px;
+
+	-moz-transform: translate(100px, 0) scale(.7) rotate(360deg);
+  	-webkit-transform: translate(100px, 0) scale(.7) rotate(360deg);
+
+  	/*transform: translateX(750px);*/
+
+  	/*
+  	-webkit-transform: rotateY(45deg) rotateZ(-45deg);
+  	-webkit-transform: translateX(750px);
+	-webkit-transform: perspective(600px) rotateY(45deg);
+	-webkit-transform: translateZ(-750px);
+	-webkit-transform: scaleZ(5) rotateX(45deg);
+	*/
+}
+.card2 {
+	top: 280px;
+
+	/*-moz-transform: translate(0, -20px) scale(.7) rotate(-10deg);*/
+  	-webkit-transform: translate(0, -20px) scale(.7) rotate(-10deg);
+}
+.card3 {
+	top: 400px;
+
+	/*-moz-transform: translate(20px, 0) scale(.7) rotate(5deg);*/
+  	-webkit-transform: translate(20px, 0) scale(.7) rotate(365deg);
+}
+.card:hover {
+	z-index: 999;
+
+	/*-moz-transform: scale(1) rotate(0);*/
+  	-webkit-transform: scale(1) rotate(0);
+}
+.card4 {
+	position: absolute;
+	left: 100px;
+	overflow: hidden;
+	background: #fff;
+
+	padding: 20px;
+	width: 350px;
+	height: 350px;
+	border: 2px solid #666;
+	border-radius: 8px;
+
+	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+	transition: all 0.5s ease-in-out;
+}
+.card4:hover {
+	z-index: 999;
+
+	webkit-transform: rotateY(45deg) rotateZ(-45deg);
+  	webkit-transform: translateX(750px);
+	webkit-transform: perspective(600px) rotateY(45deg);
+	webkit-transform: translateZ(-750px);
+	webkit-transform: scaleZ(5) rotateX(45deg);
+  	webkit-transform: scale(1) rotate(0);
+}

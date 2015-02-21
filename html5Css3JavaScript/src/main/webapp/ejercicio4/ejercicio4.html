@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CANVAS</title>
+		<!--<link rel="stylesheet" href="../lib/lab-style.css">-->
+		<!--<link rel="stylesheet" href="style.css">-->
+	</head>
+	<body>
+		<h1>SVG</h1>
+		<svg xmlns="http://www.w3.org/2000/svg" width="304" height="290">
+			<path d="M2,111h300 l-242.7,176.3 92.7-285.3 92.7,285.3z" fill="#FB2" stroke="#B00" stroke-width="4" stroke-linejoin="round"/>
+		</svg>
+		<h1>CANVAS</h1>
+		<canvas id="myCanvas" width="578" height="400"></canvas>
+	</body>
+</html>
+<script type="text/javascript">
+	var canvas = document.getElementById('myCanvas');
+	var ctx = canvas.getContext('2d');
+	ctx.beginPath();
+	ctx.moveTo(0,0);
+	ctx.lineTo(304,0);
+	ctx.lineTo(304,290);
+	ctx.lineTo(0,290);
+	ctx.closePath();
+	ctx.clip();
+	ctx.strokeStyle = 'rgba(0,0,0,0)';
+	ctx.lineCap = 'butt';
+	ctx.lineJoin = 'miter';
+	ctx.miterLimit = 4;
+	ctx.save();
+	ctx.fillStyle = "#FFFF00";
+	ctx.strokeStyle = "#084B8A";
+	ctx.lineWidth = 4;
+	ctx.lineJoin = "round";
+	ctx.beginPath();
+	ctx.moveTo(2,111);
+	ctx.lineTo(302,111);
+	ctx.lineTo(59.30000000000001,287.3);
+	ctx.lineTo(152,2);
+	ctx.lineTo(244.7,287.3);
+	ctx.closePath();
+	ctx.fill();
+	ctx.stroke();
+	ctx.restore();
+</script>

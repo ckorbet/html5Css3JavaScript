@@ -1,0 +1,54 @@
+a {
+	float: left;
+	width: 128px;
+	height: 128px;
+    background: url('sprite_furry.png') no-repeat top left;
+}
+a span {
+	display: none;
+}
+li {
+	-moz-transition: all .7s;
+	-webkit-transition: all .7s;
+	display: block;
+	float: left;
+}
+li:hover {
+	-webkit-transform: translateY(-20px) scale(1.2);
+	-moz-transform: translateY(-20px) scale(1.2);
+}
+.sprite-delicious{ background-position: 0 0; } 
+.sprite-delicious:hover,
+li:target .sprite-delicious{ background-position: 0 -129px;} 
+.sprite-facebook{ background-position: 0 -258px; } 
+.sprite-facebook:hover,
+li:target .sprite-facebook{ background-position: 0 -387px; } 
+.sprite-rss{ background-position: 0 -516px; } 
+.sprite-rss:hover,
+li:target .sprite-rss{ background-position: 0 -645px; } 
+.sprite-twitter{ background-position: 0 -774px; } 
+.sprite-twitter:hover,
+li:target .sprite-twitter{ background-position: 0 -903px; }
+
+@-webkit-keyframes bounce {
+  0% {-webkit-transform: translateY(0);}
+  10% {-webkit-transform: translateY(-30px) rotate(45deg) scale(2.5) ;}
+  20% {-webkit-transform: translateY(0) rotate(-45deg) scale(1) ;}
+  30% {-webkit-transform: translateY(30px) rotate(45deg) scale(2.5) ;}
+  40% {-webkit-transform: translateY(0) rotate(-45deg) scale(1) ;}
+  50% {-webkit-transform: translateX(-30px) rotate(45deg) scale(2.5) ;}
+  60% {-webkit-transform: translateX(0) rotate(-45deg) scale(1);} 
+  70% {-webkit-transform: translateX(30px) rotate(45deg) scale(2.5) ;}
+  80% {-webkit-transform: translateX(0) rotate(-45deg) scale(1) ;}
+  90% {-webkit-transform: translate(0) rotate(45deg) scale(2.5) ;}
+  100% {-webkit-transform: translate(0) rotate(-45deg) scale(1) ;}
+}
+
+li:target a {
+  -webkit-animation-name: bounce;
+  -webkit-animation-delay: .5s;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: ease;
+}
+

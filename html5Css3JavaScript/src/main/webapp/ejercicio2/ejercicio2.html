@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Labs - Forms 1</title>
+		<link rel="stylesheet" href="../lib/lab-style.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+
+	<body>
+		
+		<!--
+		<label>(not HTML5)</label>
+		<h1>Forms 1</h1>
+		<p>Form using the new controls</p>
+		
+		<label>(HTML5)</label>
+		-->
+
+		<header>
+			<hgroup>
+				<h1>Forms 1</h1>
+				<h2>Form using the new controls</h2>
+			</hgruop>
+		</header>
+
+		<form >
+			<p>Fields marked with <span class="required">*</span> are required:</p>
+
+			<label for="recipient">Recipient <sup>*</sup></label>
+			<!-- Default: John Done, Jane Done -->
+			<input type="text" name="recipient">
+
+			<label for="amount">Amount <sup>*</sup></label>
+			<input type="text" name="amount">
+
+			<label for="email">Confirmation e-mail</label>
+			<input type="text" name="email">
+
+			<label for="phone">Phone (SMS confirmation)</label>
+			<input type="text" name="phone">
+
+			<label for="periodicity">Periodicity (weeks)</label>
+			<!-- 1-4 weeks -->
+			<input type="text" name="periodicity">
+
+			<label for="initdate">Init date <sup>*</sup></label>
+			<input type="text" name="initdate">
+
+			<label for="multiplication">Multiplication <sup>*</sup></label>
+			<input type="text" name="multiplication">
+
+			<input type="submit" value="Send">
+
+			
+			<input type="file" multiple="false"></input>
+
+			<progress value="75" max ="100">75 of 100</progress>
+
+			<meter id="idMeter" min="0" max="100" value="50"></meter>
+
+			<input type="color" value="#FF000"/>
+		</form>
+	</body>
+
+
+</html>

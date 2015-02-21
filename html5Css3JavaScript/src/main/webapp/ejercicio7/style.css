@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* HTML5 Doctor Reset */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html{
+	overflow-x:hidden;}
+
+body{
+	background-color: #FFFFFF;
+    color: #000000;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+	position:relative;}
+	
+/*
+header{
+	background: #252525;
+	padding: 15px 0;
+	width:960px;
+}
+		
+	
+header h1{
+    font-weight: 800;
+	color:#fff;
+	text-shadow:0 1px 2px #444;
+	font-size:18px;
+	margin: 0;
+	padding: 10px;
+}				
+
+.content{
+	clear:both;
+	padding: 10px;
+	width:960px;}		
+*/
+
+header{
+  background: #252525;
+  padding: 1.5625% 0;
+  max-width:960px;
+}
+header h1{
+  font-weight: 800;
+  color:#fff;
+  text-shadow:0 1px 2px #444;
+  font-size:1.384615384615385em;
+  margin: 0;
+  padding: 1.04166666666667%;
+}
+.content{
+  clear:both;
+  padding: 1.04166666666667em;
+  max-width:960px;
+}	
+
+/*
+.content-columns {
+    padding: 10px;
+	width:960px;
+}
+*/
+.content-columns {
+  padding: 1.04166666666667%;
+  max-width:960px;
+}
+
+.content-column-left h2,
+.content-column-center h2,
+.content-column-right h2{
+	font-size:18px;}
+	
+/*
+.content-column-left {
+	clear:left;
+    float: left;
+    padding: 10px;
+    width: 300px;
+}
+
+.content-column-center{
+    float: left;
+    padding: 10px;
+    width: 300px;}
+
+.content-column-right {
+    float: left;
+    padding: 10px;
+    width: 300px;
+}
+*/
+.content-column-left,
+.content-column-center,
+.content-column-right {
+    float: left;
+    padding: 1.04166666666667%;
+    width: 31.25%;
+}	
+
+/*
+#footer{
+	padding:40px 0;
+	background: #3a536b;
+	clear:both;
+	width:960px;
+	margin: 10px 0;
+}
+*/
+
+/*
+#footer ==>> style is applied to all elements with 'footer' id
+footer ==>> style ios applied to all elements of type footer
+*/
+footer{
+  padding:4.166666666666667% 0;
+  background: #3a536b;
+  clear:both;
+  max-width:960px;
+  margin: 1.01010101010101% 0;
+}
